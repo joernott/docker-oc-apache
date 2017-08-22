@@ -1,0 +1,11 @@
+#!/bin/bash
+source /etc/sysconfig/httpd
+
+if [ -z "${PIDFILE}" ]; then
+    PIDFILE=/var/run/httpd/httpd.pid
+fi
+
+if [ -f "${PIDFILE}" ]; then
+    rm "${PIDFILE}"
+fi
+/usr/sbin/httpd -DFOREGROUND "$@"
