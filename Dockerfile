@@ -1,7 +1,9 @@
 FROM registry.ott-consult.de/oc/base
-MAINTAINER Joern Ott <joern.ott@ott-consult.de>
+LABEL MAINTAINER="joern.ott@ott-consult.de"
 
-ENV APACHE_VERSION=2.4.27-1.ius.centos7
+ENV APACHE_VERSION=2.4.29-1.ius.centos7 \
+    GIT_COMMIT="x" \
+    IMAGE_HISTORY="x"
 
 COPY src /
 
