@@ -1,7 +1,7 @@
 FROM registry.ott-consult.de/oc/base
 LABEL MAINTAINER="joern.ott@ott-consult.de"
 
-ENV APACHE_VERSION=2.4.33-2.ius.centos7 \
+ENV APACHE_VERSION=2.4.35-1.ius.centos7 \
     GIT_COMMIT="x" \
     IMAGE_HISTORY="x"
 
